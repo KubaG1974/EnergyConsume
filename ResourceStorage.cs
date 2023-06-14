@@ -15,16 +15,7 @@ namespace ResourceApp
             Antimatter = 0;
         }
 
-        public static ResourcesStorage Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new ResourcesStorage();
-
-                return _instance;
-            }
-        }
+        public static ResourcesStorage Instance => _instance;
 
         public int Energy { get; private set; }
         public int Coal { get; private set; }

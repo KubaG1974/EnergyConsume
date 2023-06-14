@@ -4,7 +4,7 @@ namespace ResourceApp
 {
     public abstract class PowerPlant
     {
-        protected ResourcesStorage resourceStorage;
+        protected readonly ResourcesStorage resourceStorage;
 
         public PowerPlant(ResourcesStorage resourceStorage)
         {
